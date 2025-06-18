@@ -8,7 +8,7 @@ import Tecnologies from "@/components/sections/TecnologiesSection/tecnologies";
 
 import Projects from "@/components/sections/ProjectsSection/projects";
 
-import Blog from "@/components/sections/BlogSection/blog";
+/*import Blog from "@/components/sections/BlogSection/blog";*/
 
 export default function Home() {
   return (
@@ -36,7 +36,7 @@ export default function Home() {
                 <Projects />
               </div>
               <div>
-                <Blog />
+                {/*<Blog />*/}
               </div>
             </div>
           </div>

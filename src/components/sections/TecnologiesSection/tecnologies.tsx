@@ -21,16 +21,16 @@ import {
 
 const Tecnologies = () => {
   return (
-    <div className="flex flex-col border rounded-2xl shadow-xl p-9 max-w-auto">
-      <h1 className="text-2xl mb-2">Tecnologias</h1>
+    <div className="flex flex-col border rounded-2xl shadow-xl p-9">
+      <h1 className="text-3xl uppercase font-mono mb-2">Tecnologias</h1>
+       <div className="mt-3 border max-w-auto justify-center items-center">
       <Carousel
           plugins={[
              Autoplay({
              delay: 5000
         })
       ]}>
-        <div className="items-center justify-center mt-3 max-w-auto">
-          <CarouselContent>
+          <CarouselContent className="p-1">
           <CarouselItem><SiTypescript size={50} /></CarouselItem>
           <CarouselItem><SiNodedotjs size={50}/></CarouselItem>
           <CarouselItem><SiFastify size={50}/></CarouselItem>
@@ -38,8 +38,8 @@ const Tecnologies = () => {
           <CarouselItem><SiPrisma size={50}/></CarouselItem>
           <CarouselItem><SiPostgresql size={50}/></CarouselItem>
           </CarouselContent>
-        </div>
-     </Carousel>
+        </Carousel>
+      </div>
     </div>
   );
 };

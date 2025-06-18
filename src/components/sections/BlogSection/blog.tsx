@@ -1,11 +1,11 @@
-import React from "react";
+/*import React from "react";
 
 import {getNotices} from "@/lib/api";
 
 import { Articles } from "@/lib/api";
 
 const Blog = async () => {
-  const notice = await getNotices();
+ /const notice = await getNotices();
 
   const handleNextNotice = async () => {
     "use server";
@@ -24,9 +24,9 @@ const Blog = async () => {
             <div className="">
               <h2 className="text-amber-300 font-semibold">Titulo</h2>
               <p>{post.title}</p>
-              <h2 className="text-amber-300">Autor</h2>
+              <h2 className="text-amber-300 font-semibold">Autor</h2>
               <p>{post?.author}</p>
-              <h2 className="text-amber-300">Descrição</h2>
+              <h2 className="text-amber-300 font-semibold">Descrição</h2>
               <p className="text-sm">{post.description}</p>
             </div>
           </div>
@@ -41,4 +41,4 @@ const Blog = async () => {
   );
 };
 
-export default Blog;
+export default Blog;*/
