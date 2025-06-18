@@ -1,27 +1,40 @@
-### 🌐 Portfólio com React, Next.js, TypeScript e Tailwind
+# 💼 Portfólio Pessoal - Luiz Guilherme
 
-```markdown
-# Portfólio Pessoal - Luiz Guilherme
+Este é o meu portfólio como desenvolvedor web, criado com foco na apresentação dos meus projetos, habilidades e integração com APIs externas para dados em tempo real.
 
-Este é meu portfólio como desenvolvedor, construído com **Next.js**, **React**, **TypeScript** e **TailwindCSS**. A proposta é apresentar meus projetos, minhas habilidades e integrar funcionalidades reais de consumo de APIs.
+## 🚀 Tecnologias Utilizadas
 
-## 🧰 Tecnologias
-
-- **Next.js** (React com SSR e rotas automáticas)
+- **React**
+- **Next.js**
 - **TypeScript**
 - **TailwindCSS**
 - **Axios**
 
-## 🌟 Funcionalidades
+## 🌐 Funcionalidades
 
-- **Seção Blog (Dinâmica)**: Consome uma API externa e gera postagens a partir da palavra-chave **"backend"**.
-- **Seção Projetos (Automática)**: Integra com a API do GitHub para listar meus repositórios, exibindo:
-  - Nome
+- 🔎 **Blog Dinâmico**  
+  Integração com uma API externa para gerar automaticamente notícias com a palavra-chave **"backend"**, exibidas na área principal do site.
+
+- 🧠 **Projetos do GitHub**  
+  Integração com a **GitHub API** para exibir dinamicamente meus repositórios públicos, incluindo:
+  - Nome do projeto
   - Descrição
   - Linguagem principal
   - Número de estrelas
 
-## 🔧 Como rodar
+## 🖥️ Estrutura do Projeto
+
+-`app/` - Página principal do projeto
+- `components/` – Componentes reutilizáveis do layout
+- `pages/` – Páginas do site com roteamento automático (Next.js)
+- `lib/` – Integração com APIs (GitHub e notícias)
+- `styles/` – Estilos customizados com TailwindCSS
+
+## 📸 Captura de Tela
+
+
+
+## 🔧 Como Rodar Localmente
 
 ```bash
 git clone https://github.com/seu-usuario/nome-do-repo
