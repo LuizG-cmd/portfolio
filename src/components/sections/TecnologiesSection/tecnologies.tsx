@@ -21,22 +21,22 @@ import {
 
 const Tecnologies = () => {
   return (
-    <div className="flex flex-col border rounded-2xl shadow-xl p-9">
+    <div className="border rounded-2xl shadow-2xl p-9">
       <h1 className="text-3xl uppercase font-mono mb-2">Tecnologias</h1>
-       <div className="mt-3 border max-w-auto justify-center items-center">
+       <div className="mt-3">
       <Carousel
           plugins={[
              Autoplay({
              delay: 5000
         })
-      ]}>
+      ]} className="">
           <CarouselContent className="p-1">
-          <CarouselItem><SiTypescript size={50} /></CarouselItem>
-          <CarouselItem><SiNodedotjs size={50}/></CarouselItem>
-          <CarouselItem><SiFastify size={50}/></CarouselItem>
-          <CarouselItem><SiNextdotjs size={50}/></CarouselItem>
-          <CarouselItem><SiPrisma size={50}/></CarouselItem>
-          <CarouselItem><SiPostgresql size={50}/></CarouselItem>
+          <CarouselItem className="basis-2/6"><SiTypescript size={50} /></CarouselItem>
+          <CarouselItem className="basis-2/6"><SiNodedotjs size={50}/></CarouselItem>
+          <CarouselItem className="basis-2/6"><SiFastify size={50}/></CarouselItem>
+          <CarouselItem className="basis-2/6"><SiNextdotjs size={50}/></CarouselItem>
+          <CarouselItem className="basis-2/6"><SiPrisma size={50}/></CarouselItem>
+          <CarouselItem className="basis-2/6"><SiPostgresql size={50}/></CarouselItem>
           </CarouselContent>
         </Carousel>
       </div>

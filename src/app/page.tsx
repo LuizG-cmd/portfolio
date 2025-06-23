@@ -6,7 +6,7 @@ import About from "@/components/sections/AboutSection/about";
 
 import Tecnologies from "@/components/sections/TecnologiesSection/tecnologies";
 
-import Projects from "@/components/sections/ProjectsSection/projects";
+/*import Projects from "@/components/sections/ProjectsSection/projects";*/
 
 /*import Blog from "@/components/sections/BlogSection/blog";*/
 
@@ -23,17 +23,17 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col">
-            <div className="mb-8">
+            <div className="mb-9">
                 <About />
             </div>
 
-            <div className="flex mb-8">
+            <div className="flex mb-9">
               <Tecnologies />
             </div>
 
-            <div className="flex flex-row justify-between mb-8 gap-7">
-              <div className="">
-                <Projects />
+            <div className="flex flex-row justify-between mb-9 gap-7">
+              <div className="shadow-2xl">
+                {/*<Projects />*/}
               </div>
               <div>
                 {/*<Blog />*/}

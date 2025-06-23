@@ -1,6 +1,6 @@
 import React from "react";
 
-import { getGitRepositories, Repositories } from "@/lib/api";
+import { getGitRepositories } from "@/lib/api";
 
 const Projects =  async () => {
   'use client'
