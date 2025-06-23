@@ -37,7 +37,7 @@ Este é o meu portfólio como desenvolvedor web, criado com foco na apresentaç�
 ## 🔧 Como Rodar Localmente
 
 ```bash
-git clone https://github.com/seu-usuario/nome-do-repo
-cd nome-do-repo
-npm install
+git clone https://github.com/LuizG-cmd/portfolio.git
+cd portolio
+npm i
 npm run dev
