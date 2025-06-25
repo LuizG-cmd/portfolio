@@ -7,13 +7,6 @@ import { Articles } from "@/lib/api";
 const Blog = async () => {
  const notice = await getNotices();
 
-  const handleNextNotice = async () => {
-    "use server";
-
-    const novaNoticia = await getNotices();
-
-    return novaNoticia;
-  };
 
   return (
     <div className="p-9 border rounded-2xl shadow-2xl">
@@ -33,8 +26,19 @@ const Blog = async () => {
         ))}
       </div>
 
-      <div className="mt-3 p-4">
-        <button onClick={handleNextNotice} className="bg-gray-400 items-center p-1 text-sm hover:bg-amber-300 rounded-full text-black">LER</button>
+      <div className="mt-3">
+        {notice.map((post: Articles) => (
+          <a
+              key={post.source.id}
+              href={post.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gray-400 items-center p-1 text-sm hover:bg-amber-300 rounded-full text-black mt-3"
+            >
+              Ler Notícia
+            </a>
+        )
+      )}
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ export interface Articles {
   author: string;
   title: string;
   description: string;
-  url: URL;
+  url: string;
 }
 
 export interface Repositories {
@@ -25,9 +25,7 @@ interface ArticlesArray {
   articles: Articles[];
 }
 
-interface RepositoriesArray {
-  repositories: Repositories[]
-}
+export type RepositoriesArray = Repositories[];
 
 const getNotices = async () => {
   const API_KEY = process.env.API_BLOG_KEY;
