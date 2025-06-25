@@ -6,9 +6,9 @@ import About from "@/components/sections/AboutSection/about";
 
 import Tecnologies from "@/components/sections/TecnologiesSection/tecnologies";
 
-/*import Projects from "@/components/sections/ProjectsSection/projects";*/
+import Projects from "@/components/sections/ProjectsSection/projects";
 
-/*import Blog from "@/components/sections/BlogSection/blog";*/
+import Blog from "@/components/sections/BlogSection/blog";
 
 export default function Home() {
   return (
@@ -17,14 +17,14 @@ export default function Home() {
         <Header />
       </header>
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <div className="flex">
-          <div className="mr-7">
+        <div className="flex flex-col sm:flex-row">
+          <div className="sm:mr-7 mb-7 sm:mb-0">
             <ProfileCard />
           </div>
 
           <div className="flex flex-col">
             <div className="mb-9">
-                <About />
+              <About />
             </div>
 
             <div className="flex mb-9">
@@ -32,12 +32,8 @@ export default function Home() {
             </div>
 
             <div className="flex flex-row justify-between mb-9 gap-7">
-              <div className="shadow-2xl">
-                {/*<Projects />*/}
-              </div>
-              <div>
-                {/*<Blog />*/}
-              </div>
+              <div className="shadow-2xl"><Projects /></div>
+              <div>{<Blog />}</div>
             </div>
           </div>
         </div>

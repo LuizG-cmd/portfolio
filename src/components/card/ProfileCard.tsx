@@ -27,17 +27,21 @@ export const ProfileCard = () => {
             />
           </div>
 
-          <CardDescription>
+        
+
+          <CardDescription className="sm:items-center">
             <p>LUIZ GUILHERME</p>
-            <p>FULLSTACK DEVELOPER</p>
+            <p>BACKEND DEVELOPER</p>
           </CardDescription>
         </CardHeader>
+        
         <CardContent>
-          <div>
+          <div className="sm:items-center">
             <p>devluizg@outlook.com.br</p>
             <p>github.com/LuizG-cmd</p>
           </div>
         </CardContent>
+        
 
         <CardFooter>
           <a

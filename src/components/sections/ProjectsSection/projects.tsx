@@ -7,8 +7,6 @@ const Projects =  async () => {
 
   const repositories = await getGitRepositories()
 
-  console.log(repositories)
-
   return (
     <div className="flex flex-col border rounded-2xl shadow-2xl p-9">
       <div className="">
@@ -16,7 +14,7 @@ const Projects =  async () => {
       </div>
       <div className="grid gap-6 mt-3">
       {repositories.map((repositorie) => (
-        <div key={repositorie.id} className="rounded-xl border p-4 shadow-md bg-white max-w-auto ">
+        <div key={repositorie.id} className="rounded-xl border p-4 shadow-md bg-white text-black max-w-auto ">
           <h2 className="text-xl font-semibold">{repositorie.name}</h2>
           <p className="text-sm text-gray-600">{repositorie.description}</p>
           <div className="mt-2 text-xs text-gray-500">

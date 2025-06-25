@@ -29,7 +29,7 @@ interface RepositoriesArray {
   repositories: Repositories[]
 }
 
-/*const getNotices = async () => {
+const getNotices = async () => {
   const API_KEY = process.env.API_BLOG_KEY;
   const words =  "backend"
   const datefrom = new Date();
@@ -41,14 +41,14 @@ interface RepositoriesArray {
 
   /*const valorAleatorio = newWord(words)*/
 
-  /*console.log(valorAleatorio);
+  /*console.log(valorAleatorio);*/
 
   const posts = await axios.get<ArticlesArray>(
     `https://newsapi.org/v2/everything?q=${words}&from=${datefrom}&sortBy=popularity&apiKey=${API_KEY}&pageSize=1`
   );
 
   return posts.data.articles;
-};*/
+};
 
 const getGitRepositories = async () => {
 
@@ -67,5 +67,5 @@ const getGitRepositories = async () => {
 
 export {
   getGitRepositories,
-  /*getNotices*/
+  getNotices
 };
