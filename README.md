@@ -30,9 +30,9 @@ Este é o meu portfólio como desenvolvedor web, criado com foco na apresentaç�
 - `lib/` – Integração com APIs (GitHub e notícias)
 - `styles/` – Estilos customizados com TailwindCSS
 
-## 📸 Captura de Tela
+## 🔗 Link do projeto
 
-
+[➡️portfolio-luizg.vercel.app](https://portfolio-luizg.vercel.app/)
 
 ## 🔧 Como Rodar Localmente
 
